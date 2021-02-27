@@ -1,0 +1,19 @@
+{
+    "name": "blog/frontend",
+    "description": "Paquete frontend del blog",
+    "type": "module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "drakezilla",
+            "email": "dt.drake@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "laravel": {
+        "providers": [
+            "Blog\\Frontend\\Providers\\BlogFrontendServiceProvider"
+        ]
+    }
+}
