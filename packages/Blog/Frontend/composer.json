@@ -1,7 +1,7 @@
 {
     "name": "blog/frontend",
     "description": "Paquete frontend del blog",
-    "type": "module",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
@@ -9,11 +9,24 @@
             "email": "dt.drake@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
-    "laravel": {
-        "providers": [
-            "Blog\\Frontend\\Providers\\BlogFrontendServiceProvider"
-        ]
+    "autoload": {
+        "psr-4": {
+            "Blog\\Frontend\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blog\\Frontend\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blog\\Frontend\\Providers\\BlogFrontendServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
     }
 }

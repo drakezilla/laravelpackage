@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "8c19f39ac42a2a62dc71cbcbd97fb92b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -57,6 +57,46 @@
                 "stack"
             ],
             "time": "2020-10-29T16:03:21+00:00"
+        },
+        {
+            "name": "blog/frontend",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/home/kini/web/blog/packages/Blog/Frontend",
+                "reference": "f43079198843f1dde3ceaee3a27aa1ba6fe7b820"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Blog\\Frontend\\Providers\\BlogFrontendServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Blog\\Frontend\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Blog\\Frontend\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "drakezilla",
+                    "email": "dt.drake@gmail.com"
+                }
+            ],
+            "description": "Paquete frontend del blog"
         },
         {
             "name": "brick/math",
@@ -6961,7 +7001,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "blog/frontend": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "blog/frontend": "^1.0@dev",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -31,19 +32,24 @@
     "extra": {
         "laravel": {
             "dont-discover": []
-        }
+            }
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/",
-            "Blog\\Frontend\\" : "packages/Blog/Frontend/src"
+            "Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
+        }
+    },
+    "repositories": {
+        "Frontend": {
+            "type": "path",
+            "url": "/home/kini/web/blog/packages/Blog/Frontend"
         }
     },
     "minimum-stability": "dev",
